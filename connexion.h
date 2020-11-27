@@ -5,3 +5,12 @@ typedef struct _une_connexion
 
   struct _une_ligne *ligne; //ligne
 } Une_connexion;
+
+typedef enum
+{
+  LIGNE,
+  PTA,
+  PTB,
+  ZERO1,
+  ZERO2
+}con_type;

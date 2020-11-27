@@ -1,5 +1,5 @@
 typedef struct _une_coord
 {
-  float lon;
-  float lat;
+  double lon;
+  double lat;
 } Une_coord;

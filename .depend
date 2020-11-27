@@ -1,0 +1,25 @@
+abr.o: abr.c coord.h station.h connexion.h truc.h liste.h ligne.h abr.h \
+ dijkstra.h
+aqr.o: aqr.c aqr.h liste.h truc.h
+aqrtopo.o: aqrtopo.c coord.h station.h connexion.h truc.h liste.h ligne.h \
+ abr.h aqrtopo.h
+connexion.o: connexion.c coord.h station.h connexion.h truc.h liste.h \
+ ligne.h abr.h
+dij.o: dij.c coord.h station.h connexion.h truc.h liste.h ligne.h abr.h \
+ dijkstra.h
+dijkstra.o: dijkstra.c coord.h station.h connexion.h truc.h liste.h \
+ ligne.h abr.h aqrtopo.h dijkstra.h
+ligne.o: ligne.c coord.h station.h connexion.h truc.h liste.h ligne.h
+liste.o: liste.c coord.h station.h connexion.h truc.h liste.h
+main.o: main.c
+metro_callback_v0.o: metro_callback_v0.c liste.h
+metro_callback_v1.o: metro_callback_v1.c liste.h
+metro_callback_v2.o: metro_callback_v2.c liste.h aqrtopo.h
+metro_callback_v3.o: metro_callback_v3.c liste.h aqrtopo.h dijkstra.h
+metro_callback_v4.o: metro_callback_v4.c liste.h aqrtopo.h dijkstra.h
+metro_v0.o: metro_v0.c metro_callback_v0.h liste.h
+metro_v1.o: metro_v1.c metro_callback_v1.h liste.h abr.h
+metro_v2.o: metro_v2.c metro_callback_v2.h liste.h abr.h aqrtopo.h
+metro_v3.o: metro_v3.c metro_callback_v3.h liste.h abr.h aqrtopo.h
+metro_v4.o: metro_v4.c metro_callback_v3.h liste.h abr.h aqrtopo.h
+truc.o: truc.c coord.h station.h connexion.h truc.h

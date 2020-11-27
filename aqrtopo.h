@@ -3,7 +3,7 @@ typedef struct _un_noeud
   Un_truc *truc; //Une station ou connexion
 
   Une_coord limite_no; //limite zone
-  Une_coord limite_se//limite zone
+  Une_coord limite_se;//limite zone
 
   struct _un_noeud *no; //Fils pour quart NO
 

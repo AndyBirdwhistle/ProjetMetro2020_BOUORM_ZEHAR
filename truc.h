@@ -11,5 +11,8 @@ typedef struct _un_truc
   Une_coord coord;
   Ttype type;
   Tdata data;
-  float user_val; //Distance pour le plus court chemin
+  double user_val; //Distance pour le plus court chemin
 } Un_truc;
+
+Un_truc  *creer_truc(Une_coord coord, Ttype type, Tdata data, double uv);
+void detruire_truc(Un_truc *truc);
